@@ -1,0 +1,8 @@
+from win32com.client import Dispatch
+
+def speak(str):
+    speak = Dispatch("SAPI.Spvoice")
+    for i in range(1):
+        speak.Speak(str)
+if __name__ == "__main__":
+    speak('aalan how are you')
